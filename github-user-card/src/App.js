@@ -1,25 +1,38 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Header';
+import UserInfo from './components/UserInfo';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+//<img src="https://ghchart.rshah.org/shockin779" alt="2016rshah's Github chart" />
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Header />
+//       <UserInfo />
+//     </div>
+//   );
+// }
+
+class App extends React.Component {
+  state = {
+    username: 'shockin779'
+  };
+
+  changeUsername = newUsername => {
+    this.setState({...this.state, username: newUsername});
+  }
+
+  render() {
+    return (
+      <div className="App">
+        <Header changeUsername={this.changeUsername}/>
+        <UserInfo username={this.state.username} />
+      </div>
+    );
+  }
 }
 
 export default App;

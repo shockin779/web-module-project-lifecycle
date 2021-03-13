@@ -1,0 +1,18 @@
+.header {
+    background-color: red;
+    margin-top: 0px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 45%;
+}
+
+.user-searchbox {
+    border-radius: 8px;
+    padding: 5px 8px;
+    border-width:0px;
+    order:none;
+    outline: none;
+}
