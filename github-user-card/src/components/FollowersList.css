@@ -1,0 +1,7 @@
+.followers-list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0px auto;
+    justify-content: center;
+}

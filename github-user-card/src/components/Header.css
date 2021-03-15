@@ -1,5 +1,5 @@
 .header {
-    background-color: red;
+    background-color: #b884e3;
     margin-top: 0px;
     height: 50px;
     display: flex;
@@ -7,6 +7,8 @@
     align-items: center;
     padding-left: 20px;
     padding-right: 45%;
+    /* color: #afe384; */
+    color: #84e389;
 }
 
 .user-searchbox {

@@ -1,8 +1,13 @@
 import React from 'react';
+import './GitChart.css';
 
 class GitChart extends React.Component {
     render() {
-        return <img src={`https://ghchart.rshah.org/${this.props.username}`} alt={`${this.props.username}'s Github chart`} />
+        return (
+            <div className="gitchart">
+                <img src={`https://ghchart.rshah.org/${this.props.username}`} alt={`${this.props.username}'s Github chart`} />
+            </div>
+        )
     }
 }
 

@@ -7,10 +7,9 @@ class UserInfo extends React.Component {
     render() {
         return (
             <div>
-                <h2>User Info for {this.props.username}</h2>
-                <UserCard />
-                <GitChart username={this.props.username} />
-                <FollowersList />
+                <UserCard user={this.props.user} />
+                <GitChart username={this.props.user.login} />
+                <FollowersList followers={this.props.followers} />
             </div>
         )
     }
